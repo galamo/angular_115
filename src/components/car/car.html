@@ -1,0 +1,6 @@
+<div class="car-card">
+    <h3>{{ car.make | uppercase }} - {{ car.model }}</h3>
+    <p><strong>Year:</strong> {{ car.year }}</p>
+    <p><strong>License Plate:</strong> {{ car.licensePlate | uppercase }}</p>
+    <p><strong>Price:</strong> {{ car.price | discount:d | priceCurrency: car.currency }}</p>
+</div>

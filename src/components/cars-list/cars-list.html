@@ -4,13 +4,11 @@
     </button>
 
     <input type="text" placeholder="Filter by model" [(ngModel)]="filterText" />
+    <button (click)="setDiscount(10)">10%</button>
+    <button (click)="setDiscount(20)">20%</button>
+    <button (click)="setDiscount(30)">30%</button>
 </div>
 
 <div *ngIf="showList" class="car-list">
-    <div class="car-card" *ngFor="let car of cars | filterByModel: filterText">
-        <h3>{{ car.make | uppercase }} - {{ car.model | uppercase}}</h3>
-        <p><strong>Year:</strong> {{ car.year }}</p>
-        <p><strong>License Plate:</strong> {{ car.licensePlate | uppercase }}</p>
-        <p><strong>Price:</strong> {{ car.price | priceCurrency: car.currency }}</p>
-    </div>
+    <app-car *ngFor="let car of cars | filterByModel: filterText" [car]="car" [d]="discountNumber"></app-car>
 </div>

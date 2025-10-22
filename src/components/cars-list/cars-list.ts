@@ -3,10 +3,12 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { FilterByModelPipe } from '../../pipes/filter-by-model-pipe';
 import { PriceCurrencyPipe } from '../../pipes/price-currency-pipe';
+import { DiscountPipe } from '../../pipes/discount-pipe';
+import { CarComponent } from '../car/car';
 
 @Component({
     standalone: true,
-    imports: [CommonModule, FormsModule, FilterByModelPipe, PriceCurrencyPipe],
+    imports: [CommonModule, FormsModule, FilterByModelPipe, PriceCurrencyPipe, DiscountPipe, CarComponent],
     selector: 'app-cars-list',
     templateUrl: './cars-list.html',
     styleUrls: ['./cars-list.css']
@@ -14,6 +16,7 @@ import { PriceCurrencyPipe } from '../../pipes/price-currency-pipe';
 export class CarsListComponent {
     public showList = true;
     public filterText = '';
+    public discountNumber = 0;
 
     cars = [
         { make: "Toyota", model: "Camry", year: 2020, licensePlate: "ABC-1234", price: 1122981, currency: "euro" },
@@ -32,5 +35,8 @@ export class CarsListComponent {
         this.showList = !this.showList;
     }
 
+    setDiscount(d: number) {
+        this.discountNumber = d;
+    }
 
 }
