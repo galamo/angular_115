@@ -2,10 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UsersList } from '../components/users-list/users-list';
+import { CarsListComponent } from '../components/cars-list/cars-list';
 
 @Component({
+    standalone: true,
   selector: 'app-root', 
-  imports: [RouterOutlet, CommonModule, UsersList],
+  imports: [RouterOutlet, CommonModule, UsersList, CarsListComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
