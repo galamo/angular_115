@@ -1,0 +1,20 @@
+<div style="height: 98vh" [style.background]="themeBackground">
+    <div>
+        <button (click)="toggleBackground('red')">Red</button>
+        <button (click)="toggleBackground('white')">White</button>
+    </div>
+    <div style="display: flex; justify-content: center;" > 
+    <h1> {{title}} </h1>
+  
+    <!-- <button (click)="NameOfFunction???" > Tomer is here! </button> -->
+</div>
+<div style="display: flex; justify-content: center;flex-direction: column;width: 50%; margin:auto"  > 
+    <button (click)="toggle()"> Show Message {{showMesage}}</button>
+    <h2 *ngIf="showMesage"> This is angular application, click the show Message button </h2>
+</div>
+<div>
+        <app-users-list></app-users-list>
+</div>
+
+
+</div>
