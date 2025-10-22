@@ -1,22 +1,16 @@
 <div class="controls">
-  <button (click)="toggleList()">
-    {{ showList ? 'Hide' : 'Show' }} Cars
-  </button>
+    <button (click)="toggleList()">
+        {{ showList ? 'Hide' : 'Show' }} Cars
+    </button>
 
-  <input
-    type="text"
-    placeholder="Filter by model"
-    [(ngModel)]="filterText"
-  />
+    <input type="text" placeholder="Filter by model" [(ngModel)]="filterText" />
 </div>
 
 <div *ngIf="showList" class="car-list">
-  <div
-    class="car-card"
-    *ngFor="let car of cars | filterByModel: filterText"
-  >
-    <h3>{{ car.make }} - {{ car.model }}</h3>
-    <p><strong>Year:</strong> {{ car.year }}</p>
-    <p><strong>License Plate:</strong> {{ car.licensePlate }}</p>
-  </div>
+    <div class="car-card" *ngFor="let car of cars | filterByModel: filterText">
+        <h3>{{ car.make | uppercase }} - {{ car.model | uppercase}}</h3>
+        <p><strong>Year:</strong> {{ car.year }}</p>
+        <p><strong>License Plate:</strong> {{ car.licensePlate | uppercase }}</p>
+        <p><strong>Price:</strong> {{ car.price | priceCurrency: car.currency }}</p>
+    </div>
 </div>

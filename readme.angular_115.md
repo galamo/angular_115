@@ -69,3 +69,10 @@ Data:
     "licensePlate": "FGH-9900"
   }
 ]
+
+
+# EX 2
+1. Create Discount Pipe
+2. 3 Buttons - each button set a discount 10/20/30 % 
+3. recalculate the price when the button set the new discount 
+
