@@ -5,6 +5,7 @@ import { FilterByModelPipe } from '../../pipes/filter-by-model-pipe';
 import { PriceCurrencyPipe } from '../../pipes/price-currency-pipe';
 import { DiscountPipe } from '../../pipes/discount-pipe';
 import { CarComponent } from '../car/car';
+import { SettingsService } from '../../services/settings/settings';
 
 @Component({
     standalone: true,
@@ -17,6 +18,10 @@ export class CarsListComponent {
     public showList = true;
     public filterText = '';
     public discountNumber = 0;
+
+    constructor(public settingsService: SettingsService) {
+    }
+
 
     cars = [
         { date: new Date().toString(), make: "Toyota", model: "Camry", year: 2020, licensePlate: "ABC-1234", price: 1122981, currency: "euro" },

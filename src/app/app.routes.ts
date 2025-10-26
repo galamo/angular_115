@@ -4,6 +4,7 @@ import { Home } from '../components/home/home';
 import { NgModule } from '@angular/core';
 import { UsersList } from '../components/users-list/users-list';
 import { ShowHeader } from '../components/show-header/show-header';
+import { Settings } from '../components/settings/settings';
 
 
 export const routes: Routes = [
@@ -12,6 +13,8 @@ export const routes: Routes = [
     { path: 'users-list', component: UsersList },
     { path: 'show-header', component: ShowHeader },
     { path: 'cars-page', component: CarsListComponent },
+    { path: 'settings', component: Settings },
+
     { path: '**', redirectTo: '/home' } // wildcard route
 ];
 

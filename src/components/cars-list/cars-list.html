@@ -10,5 +10,6 @@
 </div>
 
 <div *ngIf="showList" class="car-list">
-    <app-car *ngFor="let car of cars | filterByModel: filterText" [car]="car" [d]="discountNumber"></app-car>
+    <app-car *ngFor="let car of cars | filterByModel: filterText" [car]="car" [d]="discountNumber"
+        [carBgColor]="this.settingsService.getStyleIbject().bg"></app-car>
 </div>

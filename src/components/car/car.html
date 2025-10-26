@@ -1,4 +1,4 @@
-<div class="car-card">
+<div class="car-card" [ngStyle]="{'background': carBgColor}">
     <h3>{{ car.make | uppercase }} - {{ car.model }}</h3>
     <p><strong>Year:</strong> {{ car.year }}</p>
     <p><strong>License Plate:</strong> {{ car.licensePlate | uppercase }}</p>

@@ -9,11 +9,15 @@
         <!-- <button (click)="NameOfFunction???" > Tomer is here! </button> -->
     </div>
     <div>
-        <nav>
-            <a routerLink="/home">Home</a> |
-            <a routerLink="/users-list">users list </a> |
-            <a routerLink="/cars-page">cars</a> |
-            <a routerLink="/show-header">show Header</a>
+        <nav class="navbar">
+            <div class="navbar-logo">MyApp</div>
+            <div class="navbar-links">
+                <a routerLink="/home" routerLinkActive="active">Home</a>
+                <a routerLink="/users-list" routerLinkActive="active">Users List</a>
+                <a routerLink="/cars-page" routerLinkActive="active">Cars</a>
+                <a routerLink="/show-header" routerLinkActive="active">Show Header</a>
+                <a routerLink="/settings" routerLinkActive="active">Settings</a>
+            </div>
         </nav>
         <hr>
         <router-outlet></router-outlet>

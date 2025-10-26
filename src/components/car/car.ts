@@ -12,6 +12,7 @@ import { DiscountPipe } from '../../pipes/discount-pipe';
 export class CarComponent {
     @Input() car: any;
     @Input() d: number = 0;
+    @Input() carBgColor: string = "";
 
     ngOnInit(): void {
         console.log(111) // mount

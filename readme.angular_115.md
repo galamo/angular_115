@@ -96,4 +96,15 @@ Data:
 
 
 
+# EX 6
+1. Support Favorite Car
+2. New button in the Car Card - for Add To Favorite
+3. New Service to store all the Favotrites
+4. New Route - to show te Favorites
+5. Advanced - support removing the Car from the favorites
+6. no option to add the same car twice
+
+
+
+
 
