@@ -1,6 +1,19 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { CarsListComponent } from '../components/cars-list/cars-list';
+import { Home } from '../components/home/home';
+import { NgModule } from '@angular/core';
+import { UsersList } from '../components/users-list/users-list';
+
 
 export const routes: Routes = [
-    // {path: "/cars",  component: CarsListComponent}
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: Home },
+    { path: 'users-list', component: UsersList },
+    { path: '**', redirectTo: '/home' } // wildcard route
 ];
+
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+})
+export class AppRoutingModule { }

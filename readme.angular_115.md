@@ -82,3 +82,18 @@ Data:
 1. Support editing Age
 2. Support editing Phone
 3. Do input validation, so when editing each one of them make sure its not empty
+
+# EX 4
+1. Support editing Age
+2. Support editing Phone
+3. Support editing Name
+4. One button for edit + 3 input + select row capability 
+
+
+# EX 5
+1. Support Routing for all the component , Users, Home, Cars
+2. Support Navigation Bar
+
+
+
+
