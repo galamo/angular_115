@@ -19,8 +19,8 @@ export class CarsListComponent {
     public discountNumber = 0;
 
     cars = [
-        { make: "Toyota", model: "Camry", year: 2020, licensePlate: "ABC-1234", price: 1122981, currency: "euro" },
-        { make: "Honda", model: "Civic", year: 2019, licensePlate: "XYZ-5678", price: 1122981, currency: "dollar" },
+        { date: new Date().toString(), make: "Toyota", model: "Camry", year: 2020, licensePlate: "ABC-1234", price: 1122981, currency: "euro" },
+        { date: new Date().toString(), make: "Honda", model: "Civic", year: 2019, licensePlate: "XYZ-5678", price: 1122981, currency: "dollar" },
         { make: "Ford", model: "Mustang", year: 2021, licensePlate: "JKL-9012", price: 1122981, currency: "dollar" },
         { make: "Chevrolet", model: "Malibu", year: 2018, licensePlate: "MNO-3456", price: 1122981, currency: "dollar" },
         { make: "Nissan", model: "Altima", year: 2022, licensePlate: "QRS-7890", price: 1122981, currency: "dollar" },

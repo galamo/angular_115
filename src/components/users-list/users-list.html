@@ -1,8 +1,13 @@
-<div> 
+<div>
     <h1 class="headerSlr"> Users </h1>
+    <input type="text" [(ngModel)]="userName" />
+    {{userName}}
     <div>
         <ul>
-            <li *ngFor="let user of listOfUsers">{{user.name}} {{ checkIfOld(user.age) }} {{user.phone}} </li>
+            <li *ngFor="let user of listOfUsers; let myIndex = index">{{user.name}} {{ checkIfOld(user.age) }}
+                {{user.phone}}
+                <button (click)="editUserName(myIndex)">save</button>
+            </li>
         </ul>
     </div>
 </div>

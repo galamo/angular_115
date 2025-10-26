@@ -15,10 +15,8 @@ export class CarComponent {
 
     ngOnInit(): void {
         console.log(111) // mount
-
     }
     ngOnChanges(changes: any): void {
         console.log(changes, "changes") // update 
-
     }
 }   
