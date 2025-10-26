@@ -76,3 +76,9 @@ Data:
 2. 3 Buttons - each button set a discount 10/20/30 % 
 3. recalculate the price when the button set the new discount 
 
+
+
+# EX 3
+1. Support editing Age
+2. Support editing Phone
+3. Do input validation, so when editing each one of them make sure its not empty

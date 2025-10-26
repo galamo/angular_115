@@ -5,7 +5,7 @@ import { UsersList } from '../components/users-list/users-list';
 import { CarsListComponent } from '../components/cars-list/cars-list';
 
 @Component({
-    standalone: true,
+  standalone: true,
   selector: 'app-root', 
   imports: [RouterOutlet, CommonModule, UsersList, CarsListComponent],
   templateUrl: './app.html',
