@@ -4,9 +4,9 @@
     {{userName}}
     <div>
         <ul>
-            <li *ngFor="let user of listOfUsers; let myIndex = index">{{user.name}} {{ checkIfOld(user.age) }}
+            <li *ngFor="let user of listOfUsers; let kalimiIndex = index">{{user.name}} {{ checkIfOld(user.age) }}
                 {{user.phone}}
-                <button (click)="editUserName(myIndex)">save</button>
+                <button (click)="editUserName(kalimiIndex)">save</button>
             </li>
         </ul>
     </div>
