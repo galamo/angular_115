@@ -15,15 +15,12 @@ export class App {
     public user = signal('tomerDan');
     public title: string = "Angular Client Application"
     public themeBackground: string
-    public showMesage: boolean;
+   
     constructor() {
-        this.showMesage = false;
         this.themeBackground = "red"
     }
 
-    toggle() {
-        this.showMesage = !this.showMesage
-    }
+
     toggleBackground(param: string) {
         this.themeBackground = param
     }
