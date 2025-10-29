@@ -106,5 +106,18 @@ Data:
 
 
 
+# EX 7
+1. Work with the following API https://restcountries.com/
+2. Create a Service
+3. Create new Route Countries 
+4. Create new component countries-list ( or single country)
+5. use Promise Or Observable 
+
+
+
+
+
+
+
 
 

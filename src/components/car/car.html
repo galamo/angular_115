@@ -4,4 +4,5 @@
     <p><strong>License Plate:</strong> {{ car.licensePlate | uppercase }}</p>
     <p><strong>Price:</strong> {{ car.price | discount:d | priceCurrency: car.currency }}</p>
     <p><strong>test date:</strong> {{ car.date | date: 'longTime' }}</p>
+    <p><button (click)="addToFavorites()"> Add To Favorites </button></p>
 </div>

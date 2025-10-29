@@ -1,5 +1,8 @@
 <div>
     <h1 class="headerSlr"> Users </h1>
+    <div style="background-color: red;">
+        {{errorMessage}}
+    </div>
     <div>
         <h1>
             Edit Panel {{selectedUserIndex > -1 ? selectedUserIndex : '' }}
@@ -11,10 +14,11 @@
         <button (click)="clear()"> Clear </button>
     </div>
 
+    <div> {{isLoading}}</div>
     <ul>
         <li [ngStyle]="{'cursor': 'pointer', 'background':selectedUserIndex === currentIndex ? 'yellow' : 'none' }"
             (click)="setSelectedUser(currentIndex)" *ngFor="let user of listOfUsers; let currentIndex = index">
-            {{user.name}} {{ checkIfOld(user.age) }}
+            {{user?.name?.first}} {{user?.name?.last}} {{ user?.dob?.age}}
             {{user.phone}}
         </li>
     </ul>
